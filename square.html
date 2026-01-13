@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square Rotation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .square {
+            width: 150px;
+            height: 150px;
+            background-color: #3800d3; /* Matching the orange theme from your previous images */
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            
+            /* The transition makes the rotation smooth rather than instant */
+            transition: transform 0.5s ease-in-out;
+        }
+
+        /* This triggers when the mouse enters the square area */
+        .square:hover {
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="square"></div>
+
+</body>
+</html>
